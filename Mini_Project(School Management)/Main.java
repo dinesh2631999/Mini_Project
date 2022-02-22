@@ -25,7 +25,7 @@ public class Main {
 		File file = new File("E:\\java\\kumar\\src\\table.properties");
 		FileReader fr;
 		
-		   //loading .properties file into prop
+		   //loading .properties file into prop for timetable purpose
 			fr = new FileReader(file);
 			Properties prop=new Properties();
 			prop.load(fr);
@@ -116,7 +116,7 @@ public class Main {
 			      System.out.println("if you want to continue press y");
 			       continuation=scan.next().charAt(0);
 			      }while(continuation=='y');
-			 	 
+		 break;	 	 
 		 case 2 : 
 			 	  HashMap<String,Integer> teacher_login=new HashMap<>();
 		 		  School school1=new School();
@@ -155,7 +155,7 @@ public class Main {
 			      System.out.println("if you want to continue press y");
 			       continuation=scan.next().charAt(0);
 			      }while(continuation=='y');
-		 		  
+		 break;		  
 		 case 3:  
 		 		  HashMap<String,Integer> student_login=new HashMap<>();
 		 		  School school2=new School();
@@ -182,7 +182,7 @@ public class Main {
 				      System.out.println("if you want to continue press y");
 				       continuation=scan.next().charAt(0);
 				      }while(continuation=='y');
-		 
+		 break;
 		 case 4 :  
 		  		   HashMap<String,Integer> parent_login=new HashMap<>();
 		  		   School school3=new School();
@@ -209,7 +209,8 @@ public class Main {
 		  			   System.out.println("if you want to continue press y");
 		  			   continuation=scan.next().charAt(0);
 		  		   }while(continuation=='y');
-		
+		break;
+		default : System.out.println(" Pls enter the valid option .");		 
 		     }
            System.out.println(" if you want to continue from main menu ,then press k .");
            repeat=scan.next().charAt(0);
